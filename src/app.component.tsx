@@ -14,10 +14,10 @@ const App = () => {
     takeScreenshot,
     unload,
   } = useUnityContext({
-    loaderUrl: "/unitybuild/crateclicker.loader.js",
-    dataUrl: "/unitybuild/crateclicker.data",
-    frameworkUrl: "/unitybuild/crateclicker.framework.js",
-    codeUrl: "/unitybuild/crateclicker.wasm",
+    loaderUrl: "/unitybuild/space_build.loader.js",
+    dataUrl: "/unitybuild/space_build.data",
+    frameworkUrl: "/unitybuild/space_build.framework.js",
+    codeUrl: "/unitybuild/space_build.wasm",
     webglContextAttributes: {
       preserveDrawingBuffer: true,
     },
@@ -82,7 +82,6 @@ const App = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Crate Clicker!</h1>
       <div className={styles.unityWrapper}>
         {isLoaded === false && (
           <div className={styles.loadingBar}>
@@ -93,11 +92,14 @@ const App = () => {
           </div>
         )}
         <Unity
+          devicePixelRatio={1}
           unityProvider={unityProvider}
           style={{ display: isLoaded ? "block" : "none" }}
         />
+        <button className={styles.fullScreenButton} onClick={handleClickFullscreen}>Fullscreen</button>
+
       </div>
-      <div className="buttons">
+      {/* <div className="buttons">
         <button onClick={() => handleClickStartGame(5)}>
           Start Short Game
         </button>
@@ -121,7 +123,7 @@ const App = () => {
         {screenshotDatas.map((data, index) => (
           <img width={250} key={index} src={data} alt="Screenshot" />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
