@@ -14,10 +14,10 @@ const App = () => {
     takeScreenshot,
     unload,
   } = useUnityContext({
-    loaderUrl: "/unitybuild/space_build.loader.js",
-    dataUrl: "/unitybuild/space_build.data",
-    frameworkUrl: "/unitybuild/space_build.framework.js",
-    codeUrl: "/unitybuild/space_build.wasm",
+    loaderUrl: "https://bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi.ipfs.nftstorage.link/ipfs/bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi/space_build.loader.js",
+    dataUrl: "https://bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi.ipfs.nftstorage.link/ipfs/bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi/space_build.data",
+    frameworkUrl: "https://bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi.ipfs.nftstorage.link/ipfs/bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi/space_build.framework.js",
+    codeUrl: "https://bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi.ipfs.nftstorage.link/ipfs/bafybeiabzkcxq3na74riceanowtobf7yesho2hwk4qibc7kx6vt3gvlhpi/space_build.wasm",
     webglContextAttributes: {
       preserveDrawingBuffer: true,
     },
